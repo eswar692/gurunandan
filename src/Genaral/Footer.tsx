@@ -109,16 +109,18 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
           {/* Left Column */}
           <div className="mb-4 md:mb-0 text-center md:text-left flex flex-col gap-2">
-            <p className="font-montserrat text-xl montserrat font-semibold mt-2 text-yellow-300">
-              Designed and Developed By Eswar
-            </p>
             <a
               href="https://wa.me/918886921826?text=Hello%20Pro%20Daddy%20Agency"
               className="text-lg font-bold font-roboto hover:underline hover:text-yellow-400 transition"
-            ></a>
-            <button className="text-white bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 py-2 px-4 rounded text-sm shadow-lg hover:scale-105 transition-transform">
-              Pro Daddy Agency
-            </button>
+            >
+              <p className="font-montserrat text-xl montserrat font-semibold mt-2 text-yellow-300">
+                Designed and Developed By Eswar
+              </p>
+
+              <button className="text-white bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 py-2 px-4 rounded text-sm shadow-lg hover:scale-105 transition-transform">
+                Pro Daddy Agency
+              </button>
+            </a>
           </div>
 
           {/* Right Column */}
