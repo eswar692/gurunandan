@@ -2,19 +2,34 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
+  "cert-1 (1).png",
+  "cert-2.png",
   "https://allproblemsolutionastro.com/images/Award-2.jpg",
   "https://allproblemsolutionastro.com/images/Award-3.jpg",
-  "https://allproblemsolutionastro.com/images/Award-1.jpg",
-  "https://ravishankarguruji.com/storage/2025/02/1sa.jpeg",
-  "https://breakupsolutionastro.com/index_files/a5.jpg",
-  "https://breakupsolutionastro.com/index_files/a6.jpg",
-  "https://breakupsolutionastro.com/index_files/a7.jpg",
-  "https://breakupsolutionastro.com/index_files/a8.jpg",
-  "https://static.wixstatic.com/media/b119e7_5fe5cb8d42514fd9a7f30e7c90b87d74~mv2.jpeg",
-
-  "https://chakrasiddhijyothishyalaya.com/wp-content/uploads/2024/06/2.jpg",
-  "https://bharatbestastrologers.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-08-at-12.06.23_deb83635-300x200.jpg",
-  "https://bharatbestastrologers.com/wp-content/uploads/2025/07/certificate1-300x222.jpg",
+  "IMG-20250926-WA0012.jpg",
+  "IMG-20250926-WA0013.jpg",
+  "IMG-20250926-WA0015.jpg",
+  "IMG-20250926-WA0016.jpg",
+  "IMG-20250926-WA0017.jpg",
+  "IMG-20250926-WA0018.jpg",
+  "IMG-20250926-WA0019.jpg",
+  "IMG-20250926-WA0020.jpg",
+  "IMG-20250926-WA0022.jpg",
+  "IMG-20250926-WA0024.jpg",
+  "IMG-20250926-WA0026.jpg",
+  "IMG-20250926-WA0030.jpg",
+  "IMG-20250926-WA0032.jpg",
+  "IMG-20250926-WA0034.jpg",
+  "IMG-20250926-WA0035.jpg",
+  "IMG-20250926-WA0036.jpg",
+  "IMG-20250926-WA0037.jpg",
+  "IMG-20250926-WA0039.jpg",
+  "IMG-20250926-WA0029.jpg",
+  "IMG-20250926-WA0034.jpg",
+  "IMG-20250926-WA0035.jpg",
+  "IMG-20250926-WA0039.jpg",
+  "IMG-20250926-WA0040.jpg",
+  "WhatsApp Image 2025-09-26 at 09.59.53_c3c0d491.jpg",
 ];
 
 const ImageGrid = () => {
@@ -22,6 +37,26 @@ const ImageGrid = () => {
 
   return (
     <div className="w-full">
+      <h1 className="mt-5 text-center font-extrabold text-4xl md:text-6xl relative">
+        {/* Gradient fill with stroke */}
+        <span
+          className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-red-600 
+                   relative z-10 font-poppins"
+        >
+          Famous Vashikaran
+        </span>
+        {/* Stroke effect using pseudo-layer */}
+        <span className="absolute inset-0 text-black/90 -z-10 font-poppins tracking-wider">
+          Famous Vashikaran
+        </span>
+
+        <br />
+
+        <span className="text-lg md:text-2xl block mt-2 text-gray-100 font-medium">
+          Specialist — Trusted Remedies
+        </span>
+      </h1>
+
       {/* Grid Layout */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
         {images.map((src, index) => (
@@ -29,7 +64,7 @@ const ImageGrid = () => {
             key={index}
             src={src}
             alt={`Image ${index + 1}`}
-            className="cursor-pointer rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+            className="cursor-pointer rounded-xl shadow-md hover:scale-105 transition-transform duration-300 border-4 border-red-500 w-full h-48 object-cover"
             onClick={() => setSelectedImage(src)}
             whileHover={{ scale: 1.05 }}
           />

@@ -1,4 +1,5 @@
 import { Phone, MessageCircle } from "lucide-react";
+import { phone_number, whatsapp_number } from "../Genaral/secret";
 
 const services = [
   {
@@ -48,54 +49,59 @@ const services = [
   },
 ];
 
+const reverseServices = [...services].reverse();
+
 export default function Services() {
   return (
-    <div className="bg-gradient-to-b from-orange-50 to-yellow-100 py-20 px-6">
+    <div className="relative py-20 px-6 bg-gradient-to-br from-indigo-950 via-purple-900 to-blue-800 text-white overflow-hidden">
       {/* Heading */}
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-5xl font-extrabold text-orange-700 drop-shadow-sm montserrat">
+      <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
+        <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-400 via-yellow-300 to-red-500 bg-clip-text text-transparent drop-shadow-xl montserrat">
           Our Astrology Services
         </h2>
-        <p className="text-gray-700 mt-6 text-lg leading-relaxed roboto">
+        <p className="text-gray-300 mt-6 text-lg md:text-xl leading-relaxed roboto">
           Explore our wide range of astrology services designed to bring
           clarity, peace, and solutions to your life problems.
         </p>
       </div>
 
       {/* Cards */}
-      <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {services.map((service, idx) => (
+      <div className="max-w-7xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 relative z-10">
+        {reverseServices.map((service, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col"
+            className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl shadow-2xl flex flex-col hover:scale-105 hover:shadow-3xl transition-transform duration-300"
           >
             {/* Image */}
-            <img
-              src={service.img}
-              alt={service.name}
-              className="w-full h-90 object-cover"
-            />
+            <div className="relative h-80 w-full overflow-hidden rounded-t-3xl">
+              <img
+                src={service.img}
+                alt={service.name}
+                className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
 
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-2xl font-bold text-orange-700 mb-3 montserrat">
+              <h3 className="text-2xl font-bold text-yellow-300 mb-3 montserrat">
                 {service.name}
               </h3>
-              <p className="text-gray-600 flex-grow roboto">{service.desc}</p>
+              <p className="text-gray-200 flex-grow roboto">{service.desc}</p>
 
               {/* Buttons */}
               <div className="mt-6 flex gap-4 roboto">
-                <a href="tel:916302133653">
-                  <button className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg transition">
+                <a href={`tel:${phone_number}`}>
+                  <button className="flex items-center gap-2 bg-yellow-400/90 hover:bg-yellow-500/90 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300">
                     <Phone size={18} /> Call
                   </button>
                 </a>
                 <a
-                  href="https://wa.me/916302133653"
+                  href={`https://wa.me/${whatsapp_number}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition">
+                  <button className="flex items-center gap-2 bg-green-500/90 hover:bg-green-600/90 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300">
                     <MessageCircle size={18} /> WhatsApp
                   </button>
                 </a>
@@ -104,6 +110,24 @@ export default function Services() {
           </div>
         ))}
       </div>
+
+      {/* Cosmic Stars Overlay */}
+      <div
+        className="absolute inset-0 opacity-30 pointer-events-none"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 0)",
+          backgroundSize: "40px 40px",
+        }}
+      ></div>
+      <div
+        className="absolute inset-0 opacity-20 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1), transparent 25%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.08), transparent 25%)",
+          backgroundSize: "100% 100%",
+        }}
+      ></div>
     </div>
   );
 }

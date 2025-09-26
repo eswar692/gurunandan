@@ -1,9 +1,9 @@
-import { MessagesSquare, PhoneCall } from "lucide-react";
 import { motion } from "motion/react";
+import { phone_number, whatsapp_number } from "./secret";
 
 const CallToAction = () => {
   return (
-    <div className="w-full h-12 fixed bottom-4 left-0 flex gap-2 px-2 z-50 lg:hidden">
+    <div className="w-full fixed bottom-4 left-0 z-50 md:hidden">
       <CallBtn />
       <WhatsappBtn />
     </div>
@@ -15,22 +15,26 @@ export default CallToAction;
 const WhatsappBtn = () => {
   return (
     <motion.a
-      href="https://wa.me/916302133653"
+      href={`https://wa.me/${whatsapp_number}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex-1 flex items-center justify-center gap-1 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold rounded-full shadow-md px-3 py-1.5 hover:scale-105 transition-transform duration-300"
+      className="absolute bottom-10 left-4 w-18 h-18 flex items-center justify-center 
+      bg-white rounded-full shadow-lg overflow-hidden hover:scale-110 transition-transform duration-300"
       animate={{
         y: [0, -2, 0],
-        scale: [1, 1.03, 1],
+        scale: [1, 1.05, 1],
       }}
       transition={{
         repeat: Infinity,
-        duration: 1,
+        duration: 1.2,
         ease: "easeInOut",
       }}
     >
-      <MessagesSquare className="w-4 h-4" />
-      <span className="montserrat text-sm">Whatsapp</span>
+      <img
+        src="https://i.pinimg.com/1200x/74/15/d0/7415d00f6b719e40a4b1f9a75fc7eea5.jpg"
+        alt="Whatsapp"
+        className="w-full h-full object-cover"
+      />
     </motion.a>
   );
 };
@@ -38,22 +42,26 @@ const WhatsappBtn = () => {
 const CallBtn = () => {
   return (
     <motion.a
-      href="tel:916302133653"
+      href={`tel:${phone_number}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex-1 flex items-center justify-center gap-1 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-bold rounded-full shadow-md px-3 py-1.5 hover:scale-105 transition-transform duration-300"
+      className="absolute bottom-10 right-4 w-18 h-18 flex items-center justify-center 
+      bg-white rounded-full shadow-lg overflow-hidden hover:scale-110 transition-transform duration-300"
       animate={{
         y: [0, -2, 0],
-        scale: [1, 1.03, 1],
+        scale: [1, 1.05, 1],
       }}
       transition={{
         repeat: Infinity,
-        duration: 1,
+        duration: 1.2,
         ease: "easeInOut",
       }}
     >
-      <PhoneCall className="w-4 h-4" />
-      <span className="montserrat text-sm">Call Now</span>
+      <img
+        src="https://i.pinimg.com/736x/43/ac/f9/43acf98fb59be0b2aa824a682b8a2dc8.jpg"
+        alt="Call"
+        className="w-full h-full object-cover"
+      />
     </motion.a>
   );
 };

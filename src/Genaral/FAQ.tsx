@@ -1,16 +1,15 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import { phone_number, whatsapp_number } from "./secret";
 
 const faqs = [
   {
-    question: "Can We Meet Astrologer Sanjeeva Swamy?",
-    answer:
-      "Yes, personal meetings are available with prior appointment. Whatsapp Number:916302133653 ",
+    question: "Can We Meet Astrologer Pandith Raghavendra Swamy",
+    answer: `Yes, personal meetings are available with prior appointment. Whatsapp Number:${whatsapp_number} `,
   },
   {
     question: "Is Telephonic Consultation Available?",
-    answer:
-      "Yes, you can connect via phone from anywhere in the world. Phone Number:916302133653",
+    answer: `Yes, you can connect via phone from anywhere in the world. Phone Number:${phone_number}`,
   },
   {
     question: "What Kind Of Astrology Services Are Available Here?",
@@ -41,19 +40,22 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-gradient-to-b from-orange-50 to-yellow-100 py-16 px-2">
-      <div className="max-w-4xl mx-auto w-full">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-red-700 montserrat">
-          FAQs
+    <section className="bg-gradient-to-tr from-orange-200 via-red-300 to-pink-400 py-20 px-4">
+      <div className="max-w-5xl mx-auto w-full">
+        {/* Section Title */}
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-white montserrat drop-shadow-lg">
+          Frequently Asked Questions
         </h2>
-        <div className="mt-10 space-y-4">
+
+        <div className="mt-12 space-y-6">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className=" w-full bg-white border border-red-200 rounded-2xl shadow-md overflow-hidden"
+              className="w-full bg-white/90 backdrop-blur-md border border-red-300 rounded-3xl shadow-xl overflow-hidden transition hover:shadow-2xl duration-300"
             >
+              {/* Question */}
               <button
-                className="w-full flex justify-between items-center px-4 py-3 text-left text-lg font-semibold text-gray-800 hover:bg-red-50 transition montserrat"
+                className="w-full flex justify-between items-center px-6 py-4 text-left text-lg md:text-xl font-semibold text-red-700 hover:bg-red-50 transition montserrat"
                 onClick={() => toggleFAQ(index)}
               >
                 {faq.question}
@@ -64,8 +66,9 @@ export default function FAQ() {
                 )}
               </button>
 
+              {/* Answer */}
               {openIndex === index && (
-                <div className="px-6 pb-4 text-gray-600 leading-relaxed animate-fadeIn open-sans">
+                <div className="px-6 pb-6 text-gray-700 leading-relaxed animate-fadeIn text-base md:text-lg open-sans">
                   {faq.answer}
                 </div>
               )}
