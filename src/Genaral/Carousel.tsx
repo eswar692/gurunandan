@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { person_name } from "./secret";
 
 export default function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -92,8 +93,7 @@ export default function Carousel() {
 
                   {/* Pandit Name */}
                   <h3 className="text-3xl md:text-5xl font-bold montserrat text-pink-400 mb-6 drop-shadow-md">
-                    Pandit{" "}
-                    <span className="text-white">Raghuvendra Prasad</span>
+                    Pandit <span className="text-white">{person_name}</span>
                   </h3>
 
                   {/* Descriptions */}

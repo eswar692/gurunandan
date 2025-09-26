@@ -1,4 +1,5 @@
 import ImageGrid from "../Genaral/ImageGrid";
+import { person_name } from "../Genaral/secret";
 
 export default function About() {
   return (
@@ -24,10 +25,8 @@ export default function About() {
           </h2>
           <p className="text-lg leading-relaxed space-y-4">
             Astrologer{" "}
-            <span className="font-bold text-yellow-300">
-              Pandit Raghavendra Swamy
-            </span>{" "}
-            is a renowned and respected spiritual leader in India. With his deep
+            <span className="font-bold text-yellow-300">{person_name}</span> is
+            a renowned and respected spiritual leader in India. With his deep
             knowledge of astrology and unwavering commitment to helping others,
             he has established himself as a trusted advisor to people across the
             country.
@@ -36,7 +35,7 @@ export default function About() {
             Through his extensive experience and intuitive abilities, Astrologer
             <span className="font-semibold text-orange-300">
               {" "}
-              Pandit Raghavendra Swamy
+              {person_name}
             </span>{" "}
             offers a wide range of services, including palm readings, face
             readings, photo readings, and phone consultations.

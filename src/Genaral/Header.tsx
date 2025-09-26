@@ -2,7 +2,7 @@ import { MenuIcon, X } from "lucide-react";
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
-import { phone_number } from "./secret";
+import { person_name, phone_number } from "./secret";
 
 const Header = () => {
   return (
@@ -25,7 +25,7 @@ const TitleCTA = () => (
       {/* Left Logo/Text */}
       <div className="flex items-center gap-3">
         <h5 className="montserrat font-bold text-white text-sm md:text-2xl">
-          Pandith Raghavendra Prasad
+          {person_name}
         </h5>
       </div>
 

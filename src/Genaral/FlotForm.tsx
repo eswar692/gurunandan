@@ -8,6 +8,7 @@ import {
   DialogTrigger,
 } from "../components/ui/dialog";
 import Form from "./Form";
+import { person_name } from "./secret";
 
 const FlotForm = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const FlotForm = () => {
       <DialogContent className="sm:max-w-[450px] h-auto w-[90%] bg-white shadow-2xl rounded-3xl p-6">
         <DialogHeader>
           <DialogTitle className="text-center text-2xl font-bold text-red-600 montserrat">
-            Contact Chamundeswari Astrology Center
+            Contact {person_name}
           </DialogTitle>
           <DialogDescription className="mt-2 text-center text-gray-600 text-sm open-sans">
             Please fill in your details to get in touch

@@ -13,7 +13,7 @@ import FAQ from "../Genaral/FAQ";
 import CardCarousel from "../Genaral/CardsCarousel";
 import ImageGrid from "../Genaral/ImageGrid";
 import AllReligion from "../Genaral/AllReligion";
-import { phone_number, whatsapp_number } from "../Genaral/secret";
+import { person_name, phone_number, whatsapp_number } from "../Genaral/secret";
 import VashikaranGrid from "../Genaral/VashikaranGrid";
 
 const Home = () => {
@@ -126,14 +126,12 @@ const AboutAstrologer = () => {
           </button>
 
           <h2 className="text-3xl md:text-5xl font-extrabold text-red-800 mb-6 montserrat drop-shadow-lg">
-            Pandit Raghuvendra Prasad Ji
+            {person_name}
           </h2>
 
           <p className="text-gray-800 text-lg md:text-xl leading-relaxed mb-4 open-sans">
             The world-famous astrologer{" "}
-            <span className="font-bold text-red-600">
-              Pandit Raghuvendra Prasad Ji
-            </span>{" "}
+            <span className="font-bold text-red-600">{person_name}</span>{" "}
             provides powerful solutions for all life problems. Trained by his
             father and grandfather, he brings decades of experience and accurate
             guidance to his clients.
@@ -399,7 +397,7 @@ function HomeLastDesign() {
           <div className="relative group">
             <img
               src="https://i.pinimg.com/736x/00/1d/bb/001dbb9f0f876f5b467b2c74d8fcf23b.jpg"
-              alt="Pandith Raghuvendra Prasad"
+              alt={person_name}
               className="w-80 h-80 rounded-full border-8 border-white shadow-2xl object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-red-400 to-pink-500 opacity-20 group-hover:opacity-30 blur-2xl transition"></div>
@@ -408,8 +406,8 @@ function HomeLastDesign() {
 
         {/* Right Side - Content */}
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-pink-600 to-orange-500 drop-shadow-lg">
-            Pandith Raghuvendra Prasad
+          <h2 className="text-xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-pink-600 to-orange-500 drop-shadow-lg">
+            {person_name}
           </h2>
           <h3 className="text-2xl font-semibold text-gray-800">
             🌟 Famous Astrologer in India 🌟
@@ -419,7 +417,7 @@ function HomeLastDesign() {
             <span className="font-semibold text-red-600">
               Vastu, Horoscope & Vashikaran
             </span>
-            , Pandith Raghuvendra Prasad has guided countless people across
+            , {person_name} has guided countless people across
             <span className="text-orange-600">
               {" "}
               Hindu, Muslim & Christian
