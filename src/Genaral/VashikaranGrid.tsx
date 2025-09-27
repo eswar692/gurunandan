@@ -74,7 +74,7 @@ export default function VashikaranGrid() {
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-extrabold montserrat">
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500">
-              Vashikaran Gurunchi
+              Vashikaran Guruji
             </span>
           </h2>
           <p className="mt-3 text-gray-600 max-w-2xl mx-auto">

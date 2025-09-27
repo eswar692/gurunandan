@@ -370,7 +370,7 @@ const AllServicesModern = () => {
               </p>
 
               {/* Button */}
-              <a href="tel:916302133653">
+              <a href={`tel:${phone_number}`}>
                 <button className="roboto flex items-center justify-center gap-2 w-full bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-red-400/50 hover:scale-105 transition-all">
                   <Phone className="w-5 h-5" />
                   Call Now
