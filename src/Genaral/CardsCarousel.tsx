@@ -3,6 +3,7 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, Phone, MessageCircle } from "lucide-react";
 import { useCallback } from "react";
+import { phone_number, whatsapp_number } from "./secret";
 
 const CardCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -102,7 +103,7 @@ const CardCarousel = () => {
                 <div className="mt-6 flex gap-1">
                   {/* Call Button */}
                   <a
-                    href="tel:916302133653"
+                    href={`tel:${phone_number}`}
                     className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-5 py-1 sm:px-5 sm:py-1 rounded-full flex items-center  font-semibold shadow-lg hover:scale-105 hover:shadow-2xl transition transform duration-300"
                   >
                     <Phone size={18} />
@@ -111,7 +112,7 @@ const CardCarousel = () => {
 
                   {/* WhatsApp Button */}
                   <a
-                    href="https://wa.me/916302133653"
+                    href={`https://wa.me/${whatsapp_number}`}
                     target="_blank"
                     className="bg-gradient-to-r from-green-400 to-green-600 text-white px-10 py-4  rounded-full flex items-center gap-2 font-semibold shadow-lg hover:scale-105 hover:shadow-2xl transition transform duration-300"
                   >

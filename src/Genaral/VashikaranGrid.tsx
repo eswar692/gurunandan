@@ -1,7 +1,6 @@
 import { MessageCircle, Phone } from "lucide-react";
 import { motion } from "framer-motion";
-
-const whatsapp_number = "916302133653"; // replace or import from secret
+import { phone_number, whatsapp_number } from "./secret";
 
 export default function VashikaranGrid() {
   const items = [
@@ -121,7 +120,7 @@ export default function VashikaranGrid() {
 
                 <div className="flex items-center justify-center gap-3">
                   <a
-                    href={`tel:916302133653`}
+                    href={`tel:${phone_number}`}
                     className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white font-semibold shadow"
                   >
                     <Phone className="w-4 h-4" />
