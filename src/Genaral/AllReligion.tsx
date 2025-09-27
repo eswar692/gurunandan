@@ -1,3 +1,5 @@
+import { person_name } from "./secret";
+
 const AllReligion = () => {
   return (
     <section className="bg-gradient-to-br from-purple-900 via-pink-800 to-red-700 py-16 px-2 relative overflow-hidden">
@@ -16,14 +18,14 @@ const AllReligion = () => {
 
           {/* Name */}
           <h2 className="mt-6 text-2xl md:text-3xl font-bold text-yellow-200 drop-shadow-md">
-            Pandith Raghuvendra Prasad
+            {person_name}
           </h2>
 
           {/* Description */}
           <p className="mt-6 text-lg md:text-xl leading-relaxed text-gray-100 max-w-xl">
             With deep spiritual knowledge across{" "}
             <span className="font-semibold text-yellow-300">all faiths</span>,
-            Pandith Raghuvendra Prasad provides{" "}
+            {person_name} provides{" "}
             <span className="text-pink-200">
               powerful & permanent solutions
             </span>

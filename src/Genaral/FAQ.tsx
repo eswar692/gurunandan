@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
-import { phone_number, whatsapp_number } from "./secret";
+import { person_name, phone_number, whatsapp_number } from "./secret";
 
 const faqs = [
   {
-    question: "Can We Meet Astrologer Pandith Raghavendra Swamy",
+    question: `Can We Meet Astrologer ${person_name}`,
     answer: `Yes, personal meetings are available with prior appointment. Whatsapp Number:${whatsapp_number} `,
   },
   {
