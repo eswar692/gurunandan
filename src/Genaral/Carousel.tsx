@@ -88,7 +88,7 @@ export default function Carousel() {
                 <div className="text-center max-w-4xl px-6">
                   {/* Title */}
                   <h2 className="text-5xl md:text-7xl font-extrabold montserrat text-yellow-300 drop-shadow-lg mb-4">
-                    Famous Vashikaran
+                    stro Honest
                   </h2>
 
                   {/* Pandit Name */}
