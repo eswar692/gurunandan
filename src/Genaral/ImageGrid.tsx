@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { business_name } from "./secret";
 
 const images = [
   "cert-1 (1).png",
@@ -43,11 +44,11 @@ const ImageGrid = () => {
           className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-red-600 
                    relative z-10 font-poppins"
         >
-          Famous Vashikaran
+          {business_name}
         </span>
         {/* Stroke effect using pseudo-layer */}
         <span className="absolute inset-0 text-black/90 -z-10 font-poppins tracking-wider">
-          Famous Vashikaran
+          {business_name}
         </span>
 
         <br />

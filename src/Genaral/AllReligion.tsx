@@ -1,4 +1,4 @@
-import { person_name } from "./secret";
+import { business_name, person_name } from "./secret";
 
 const AllReligion = () => {
   return (
@@ -9,7 +9,7 @@ const AllReligion = () => {
           {/* Main Title */}
           <h1 className="text-4xl md:text-5xl font-extrabold leading-snug relative inline-block">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500">
-              Famous Vashikaran Specialist
+             {business_name}
             </span>
             <div className="mt-2 text-lg md:text-xl font-semibold tracking-wide text-yellow-300">
               Hindu · Muslim · Jesus — All Religions
@@ -22,16 +22,15 @@ const AllReligion = () => {
           </h2>
 
           {/* Description */}
-          <p className="mt-6 text-lg md:text-xl leading-relaxed text-gray-100 max-w-xl">
-            With deep spiritual knowledge across{" "}
-            <span className="font-semibold text-yellow-300">all faiths</span>,
-            {person_name} provides{" "}
-            <span className="text-pink-200">
-              powerful & permanent solutions
-            </span>
-            for love, marriage, business, family, health, and enemy-related
-            problems. Trusted globally for guiding people from every community.
-          </p>
+         <p className="mt-6 text-lg md:text-xl leading-relaxed text-gray-100 max-w-xl">
+  With deep spiritual knowledge across{" "}
+  <span className="font-semibold text-yellow-300">various traditions</span>,
+  {person_name} offers{" "}
+  <span className="text-pink-200">
+    trusted guidance
+  </span>{" "}
+  for love, relationships, family, business, and life challenges.
+</p>
         </div>
 
         {/* Right Images - Innovative Layout */}

@@ -1,26 +1,26 @@
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import useInViewOnce from "./InView";
-import { phone_number, whatsapp_number } from "./secret";
+import { person_name, phone_number, whatsapp_number } from "./secret";
 
 export default function Footer() {
   const [ref, inView] = useInViewOnce(0.2);
 
   const services = [
-    "Vashikarana Specialist",
-    "Love Expert",
-    "Astrology Specialist",
-    "Love Problem Expert",
-    "Love Marriage Approval",
-    "Quick Rishta Marriage",
+    "Vashikaran Consultation",
+    "Relationship Guidance",
+    "Astrology Consultation",
+    "Love Problem Guidance",
+    "Love Marriage Guidance",
+    "Marriage Matching",
   ];
 
   const whyChoose = [
-    "Relationship Problem",
-    "Husband-Wife Dispute Specialist",
-    "Happy Clients",
-    "Online Astrologer",
-    "Visa Problems",
+    "Relationship Guidance",
+    "Husband-Wife Dispute Guidance",
+    "Experienced Astrologer",
+    "Online Consultations",
+    "Visa-Related Astrology Guidance",
   ];
 
   return (
@@ -48,13 +48,13 @@ export default function Footer() {
         {/* About */}
         <div>
           <h2 className="font-bold text-3xl mb-3 montserrat text-cyan-400">
-            About Famous Vashikaran Specialist
+            About Us
           </h2>
           <p className="text-lg leading-relaxed montserrat text-gray-200">
-            <b>Famous Vashikaran Specialist</b> is ranked as one of South
-            India's Top 5 Astrologers. Using exceptional astrological skills,
-            Dr. Sri Sanjeev Swamy helps clients understand themselves, their
-            goals, aspirations, constraints, and potential.
+            <b></b> offers traditional astrology
+             consultations led by {person_name}, helping
+            clients understand themselves, their goals, aspirations,
+            constraints, and potential.
           </p>
         </div>
 
@@ -66,10 +66,10 @@ export default function Footer() {
           <p className="montserrat text-xl">📞 {phone_number}</p>
           <p className="montserrat text-xl">💬 +91 {whatsapp_number}</p>
           <p className="mt-2 font-bold text-pink-400 montserrat">
-            Best Astro Guidance
+            Astro Guidance You Can Trust
           </p>
           <p className="text-sm montserrat text-gray-300">
-            AUTHENTIC | RELIABLE | GENUINE | SUPPORTIVE
+            AUTHENTIC | RELIABLE | SUPPORTIVE
           </p>
         </div>
 
@@ -101,6 +101,22 @@ export default function Footer() {
               </li>
             ))}
           </ul>
+
+          {/* Legal links - required for Google Ads destination policy compliance */}
+          <div className="flex gap-4 mt-4 text-sm montserrat">
+            <a
+              href="/privacy-policy"
+              className="text-gray-300 hover:text-yellow-300 underline transition"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms"
+              className="text-gray-300 hover:text-yellow-300 underline transition"
+            >
+              Terms of Service
+            </a>
+          </div>
         </div>
       </motion.div>
 
@@ -128,11 +144,11 @@ export default function Footer() {
             <p className="font-montserrat montserrat text-gray-200">
               © {new Date().getFullYear()}{" "}
               <a
-                href="https://famousvashikaran.in/"
+                href="https://famouspoduval.in"
                 target="_blank"
                 className="font-semibold hover:text-yellow-300 transition"
               >
-                www.famousvashikaran.in
+                famouspoduval.in
               </a>{" "}
               – All Rights Reserved.
             </p>
@@ -142,41 +158,3 @@ export default function Footer() {
     </motion.footer>
   );
 }
-
-// const CopyRightAndContact = () => {
-//   return (
-//     <div className="py-2 z-30 bg-gradient-to-r from-red-700 to-orange-600 text-white absolute bottom-0 left-0 right-0">
-//       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-//         {/* Left Column */}
-//         <div className="mb-4 md:mb-0 text-center md:text-left flex gap-2">
-//           <p className="font-montserrat text-xl montserrat font-semibold mt-2">
-//             Designed and Developed By Eswar
-//           </p>
-//           <a
-//             href="https://wa.me/918886921826?text=Hello%20Pro%20Daddy%20Agency"
-//             className="text-lg font-bold font-roboto hover:underline hover:text-yellow-300 transition"
-//           >
-//             <button className=" text-black bg-white   py-2 px-4 rounded text-sm">
-//               Pro Daddy Agency
-//             </button>
-//           </a>
-//         </div>
-
-//         {/* Right Column */}
-//         <div className="text-center md:text-right poppins text-md">
-//           <p className=" font-montserrat montserrat">
-//             © {new Date().getFullYear()}{" "}
-//             <a
-//               href="https://famousvashikaran.in/"
-//               target="_blank"
-//               className="font-semibold hover:text-yellow-300 transition"
-//             >
-//               www.famousvashikaran.in
-//             </a>{" "}
-//             – All Rights Reserved.
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };

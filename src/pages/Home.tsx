@@ -45,22 +45,22 @@ export default Home;
 
 const Problems = () => {
   const problems = [
-    {
-      title: "Lost Love Back",
-      desc: "Available on both WhatsApp and Call. One call can change your life.",
-      img: "https://i.pinimg.com/736x/9e/62/89/9e6289902fb93c22b7245c4a72ab355d.jpg",
-    },
-    {
-      title: "Marriage Problem Solution",
-      desc: "Solve disputes and misunderstandings with astrology guidance.",
-      img: "https://i.pinimg.com/1200x/65/b5/7a/65b57ad4bc6f7bc20fcbd8ea7bfe3191.jpg",
-    },
-    {
-      title: "Vashikaran Specialist",
-      desc: "Attract your desired partner with trusted vashikaran solutions.",
-      img: "https://i.pinimg.com/736x/d1/7b/6e/d17b6e6bbe4cb76812aea53029b0182d.jpg",
-    },
-  ];
+  {
+    title: "Love & Relationship",
+    desc: "Get personalized guidance for love, relationships, communication, and emotional concerns.",
+    img: "https://i.pinimg.com/736x/9e/62/89/9e6289902fb93c22b7245c4a72ab355d.jpg",
+  },
+  {
+    title: "Marriage Guidance",
+    desc: "Spiritual guidance for marriage concerns, misunderstandings, communication, and family harmony.",
+    img: "https://i.pinimg.com/1200x/65/b5/7a/65b57ad4bc6f7bc20fcbd8ea7bfe3191.jpg",
+  },
+  {
+    title: "Relationship Guidance",
+    desc: "Traditional spiritual guidance for relationship concerns, emotional connection, and personal harmony.",
+    img: "https://i.pinimg.com/736x/d1/7b/6e/d17b6e6bbe4cb76812aea53029b0182d.jpg",
+  },
+];
 
   const reverseProblems = [...problems].reverse();
 
@@ -130,18 +130,17 @@ const AboutAstrologer = () => {
           </h2>
 
           <p className="text-gray-800 text-lg md:text-xl leading-relaxed mb-4 open-sans">
-            The world-famous astrologer{" "}
             <span className="font-bold text-red-600">{person_name}</span>{" "}
-            provides powerful solutions for all life problems. Trained by his
-            father and grandfather, he brings decades of experience and accurate
-            guidance to his clients.
+            offers traditional spiritual and astrological guidance based on
+            years of learning and experience. His approach focuses on
+            understanding individual concerns and providing personalized
+            guidance.
           </p>
 
           <p className="text-gray-800 text-lg md:text-xl leading-relaxed open-sans">
-            Renowned for understanding the core of every problem, he ensures
-            complete satisfaction and lasting solutions. People from all over
-            the world trust his advice for love, career, family, and spiritual
-            guidance.
+            With knowledge passed down through generations, he provides
+            guidance for love, relationships, career, family, and personal
+            challenges, helping people find clarity and a positive direction.
           </p>
         </div>
 
@@ -150,7 +149,7 @@ const AboutAstrologer = () => {
           <div className="relative w-full h-[450px] md:h-[500px] overflow-hidden rounded-3xl shadow-2xl">
             <img
               src="https://i.pinimg.com/736x/ea/1d/12/ea1d121d1a00aec32b93a79d6bb72ae8.jpg"
-              alt="Astrologer Banner"
+              alt="Astrologer"
               className="w-full h-full object-cover transform transition duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20 rounded-3xl group-hover:bg-black/30 transition"></div>
@@ -163,34 +162,34 @@ const AboutAstrologer = () => {
 
 const AstrologyServices = () => {
   const services = [
-    {
-      title: "Breakup Problem",
-      desc: "Breakup Problem is very common in today's generation and if you are also going through the same then do use astrology to keep such separation problems far away.",
-      img: "https://i.pinimg.com/736x/1c/77/2c/1c772cd72354da24308771d64fc70d02.jpg",
-    },
-    {
-      title: "Gf/Bf Dispute",
-      desc: "Gf/Bf Dispute always is a stressful situation. Astrological remedies help to keep your relationship smooth and healthy.",
-      img: "https://i.pinimg.com/736x/a9/63/0d/a9630de48cbdf2fe602f0707e7e5a490.jpg",
-    },
-    {
-      title: "Love Problem",
-      desc: "It is not easy to come out from a Love Problem but astrology can provide a better path to keep love alive in relationships.",
-      img: "https://i.pinimg.com/736x/04/f5/8b/04f58b8fa673e305280ffbefc464ed74.jpg",
-    },
-    {
-      title: "Family Problem",
-      desc: "When you want to get rid of Family Problem, use astrological remedies that bring peace and positivity at home.",
-      img: "https://i.pinimg.com/1200x/65/90/34/6590344e50ed6a28c5baf17159f702fd.jpg",
-    },
-  ];
+  {
+    title: "Breakup Support",
+    desc: "Personalized spiritual guidance for navigating separation, emotions, and relationship challenges.",
+    img: "https://i.pinimg.com/736x/1c/77/2c/1c772cd72354da24308771d64fc70d02.jpg",
+  },
+  {
+    title: "Relationship Disputes",
+    desc: "Guidance for communication, misunderstandings, emotional concerns, and relationship harmony.",
+    img: "https://i.pinimg.com/736x/a9/63/0d/a9630de48cbdf2fe602f0707e7e5a490.jpg",
+  },
+  {
+    title: "Love Guidance",
+    desc: "Traditional spiritual guidance for love, emotional connection, and relationship concerns.",
+    img: "https://i.pinimg.com/736x/04/f5/8b/04f58b8fa673e305280ffbefc464ed74.jpg",
+  },
+  {
+    title: "Family Harmony",
+    desc: "Guidance for family relationships, communication, misunderstandings, and a peaceful home.",
+    img: "https://i.pinimg.com/1200x/65/90/34/6590344e50ed6a28c5baf17159f702fd.jpg",
+  },
+];
   return (
     <section className="relative py-16 px-6 bg-gradient-to-b from-rose-50 via-pink-50 to-purple-100">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-4xl font-extrabold montserrat mb-12">
           <span className="bg-gradient-to-r from-pink-600 via-rose-500 to-purple-600 bg-clip-text text-transparent drop-shadow-sm">
-            Our Other Astrology Services
+          Explore Our Services
           </span>
         </h2>
 

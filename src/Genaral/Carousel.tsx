@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { person_name } from "./secret";
+import { business_name, person_name } from "./secret";
 
 export default function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -88,7 +88,7 @@ export default function Carousel() {
                 <div className="text-center max-w-4xl px-6">
                   {/* Title */}
                   <h2 className="text-5xl md:text-7xl font-extrabold montserrat text-yellow-300 drop-shadow-lg mb-4">
-                    Famous Vashikaran
+                   {business_name}
                   </h2>
 
                   {/* Pandit Name */}
@@ -98,9 +98,7 @@ export default function Carousel() {
 
                   {/* Descriptions */}
                   <p className="text-lg md:text-2xl text-gray-100 poppins leading-relaxed mb-3">
-                    Powerful Vashikaran remedies to restore love, attract
-                    harmony, and solve complex life challenges with trusted
-                    guidance.
+                   Guidance for harmony, relationships & personal challenges
                   </p>
                   <p className="text-lg md:text-2xl text-gray-100 poppins leading-relaxed">
                     Decades of experience helping people worldwide with safe,

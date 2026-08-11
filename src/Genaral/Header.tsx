@@ -2,14 +2,14 @@ import { MenuIcon, X } from "lucide-react";
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";
-import { person_name, phone_number } from "./secret";
+import { business_name, person_name, phone_number } from "./secret";
 
 const Header = () => {
   return (
     <header className="w-full bg-gradient-to-r from-pink-50 to-purple-100 shadow-lg top-0 z-50">
       <TitleCTA />
 
-      <div className="px-2 md:max-w-[80%] mx-auto flex flex-col gap-6 py-">
+      <div className="px-2 md:max-w-[80%] mx-auto flex flex-col gap-6 py-2">
         <LogoAndMenu />
       </div>
       <ScrollingMarquee />
@@ -56,13 +56,14 @@ const LogoAndMenu = () => (
       />
       <div className="flex flex-col text-center md:text-left">
         <h1 className=" montserrat font-extrabold text-xl md:text-3xl text-gray-900">
-          Famous Vashikaran Specialist
+          {business_name}
         </h1>
         <p className="font-bold text-gray-500 open-sans text-sm md:text-base  mt-1">
-          Trusted Astrology Since 1956
+          Trusted Jyothish Since 1956
         </p>
         <p className="montserrat text-sm md:text-sm text-gray-600 mt-1">
-          Powerful Vashikaran solutions with 100% proven results
+          Traditional guidance for life,
+          relationships, and career
         </p>
       </div>
     </div>
@@ -106,7 +107,7 @@ const MobileNav = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
     <div>
       <div className="flex justify-between items-center mb-6">
         <h1 className="montserrat text-2xl font-bold text-gray-900">
-          Famous Vashikaran Specialist
+         {business_name} 
         </h1>
         <button
           onClick={() => setOpen(false)}
@@ -130,9 +131,9 @@ const MobileNav = ({ setOpen }: { setOpen: (open: boolean) => void }) => (
       </ul>
     </div>
     <p className="open-sans text-gray-700 text-xl mt-6">
-      <b className="text-red-700">Pandith Raghavendra Guruji</b> - Expert
-      horoscope readings, match-making, career predictions, and spiritual
-      remedies for confident living.
+      <b className="text-red-700">Pandith Raghavendra Guruji</b> - Horoscope
+      readings, match-making, career predictions, and spiritual guidance for
+      confident living.
     </p>
   </div>
 );
@@ -144,9 +145,8 @@ const ScrollingMarquee = () => (
       className="whitespace-nowrap text-fuchsia-400 font-bold py-2 open-sans text-base md:text-lg"
       gradient={false}
     >
-      Facing Love Breakup, Relationship Problems, Marriage Disputes, or Want
-      Your Love Back? Consult for Vashikaran solutions with trusted Astrologer
-      today!
+      Facing Love Breakup, Relationship Problems, or Marriage Disputes? Book a
+      Consultation with an Experienced Astrologer Today!
     </Marquee>
   </div>
 );

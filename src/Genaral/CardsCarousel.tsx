@@ -41,23 +41,23 @@ const CardCarousel = () => {
     [emblaApi]
   );
 
-  const cards = [
-    {
-      title: "Get Your Love Back",
-      desc: "Reunite with your lost love and restore peace in your relationship. Powerful astrology remedies heal misunderstandings, remove negativity, and attract harmony into your love life.",
-      img: "https://i.pinimg.com/736x/9e/62/89/9e6289902fb93c22b7245c4a72ab355d.jpg",
-    },
-    {
-      title: "Psychic Reading",
-      desc: "Gain clarity about your future with accurate psychic readings. Discover insights about love, marriage, career, and finances while removing negative energies blocking your path.",
-      img: "https://i.pinimg.com/736x/d1/7b/6e/d17b6e6bbe4cb76812aea53029b0182d.jpg",
-    },
-    {
-      title: "Solve Business Problem",
-      desc: "Overcome financial struggles and business obstacles with spiritual solutions. Boost growth, attract prosperity, and create long-lasting stability with divine guidance.",
-      img: "https://i.pinimg.com/736x/84/dd/e6/84dde6e4a1641f19a2f53577ec4b9f4c.jpg",
-    },
-  ];
+ const cards = [
+  {
+    title: "Love & Relationship Guidance",
+    desc: "Get spiritual guidance for relationship concerns, misunderstandings, emotional connection, and restoring harmony in your love life.",
+    img: "https://i.pinimg.com/736x/9e/62/89/9e6289902fb93c22b7245c4a72ab355d.jpg",
+  },
+  {
+    title: "Spiritual Reading",
+    desc: "Explore spiritual insights for love, marriage, career, finances, and important life decisions with personalized guidance.",
+    img: "https://i.pinimg.com/736x/d1/7b/6e/d17b6e6bbe4cb76812aea53029b0182d.jpg",
+  },
+  {
+    title: "Business Guidance",
+    desc: "Receive spiritual guidance for business challenges, career decisions, growth opportunities, and creating a positive direction.",
+    img: "https://i.pinimg.com/736x/84/dd/e6/84dde6e4a1641f19a2f53577ec4b9f4c.jpg",
+  },
+];
 
   return (
     <div className="relative w-full  ">
@@ -111,14 +111,15 @@ const CardCarousel = () => {
                   </a>
 
                   {/* WhatsApp Button */}
-                  <a
-                    href={`https://wa.me/${whatsapp_number}`}
-                    target="_blank"
-                    className="bg-gradient-to-r from-green-400 to-green-600 text-white px-10 py-4  rounded-full flex items-center gap-2 font-semibold shadow-lg hover:scale-105 hover:shadow-2xl transition transform duration-300"
-                  >
-                    <MessageCircle size={18} />
-                    <h5 className="text-sm">WhatsApp</h5>
-                  </a>
+                 <a
+  href={`https://wa.me/${whatsapp_number}`}
+  target="_blank"
+  rel="noreferrer"
+  className="bg-gradient-to-r from-green-400 to-green-600 text-white px-10 py-4 rounded-full flex items-center gap-2 font-semibold shadow-lg hover:scale-105 hover:shadow-2xl transition transform duration-300"
+>
+  <MessageCircle size={18} />
+  <h5 className="text-sm">WhatsApp</h5>
+</a>
                 </div>
               </div>
             </div>
