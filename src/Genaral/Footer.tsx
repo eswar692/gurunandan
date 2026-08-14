@@ -6,14 +6,14 @@ import { person_name, phone_number, whatsapp_number } from "./secret";
 export default function Footer() {
   const [ref, inView] = useInViewOnce(0.2);
 
-  const services = [
-    "Vashikaran Consultation",
-    "Relationship Guidance",
-    "Astrology Consultation",
-    "Love Problem Guidance",
-    "Love Marriage Guidance",
-    "Marriage Matching",
-  ];
+ const services = [
+  "Personal Spiritual Guidance",
+  "Relationship Guidance",
+  "Astrology Consultation",
+  "Love & Relationship Guidance",
+  "Love Marriage Guidance",
+  "Marriage Compatibility Guidance",
+];
 
   const whyChoose = [
     "Relationship Guidance",

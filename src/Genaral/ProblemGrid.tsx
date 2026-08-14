@@ -2,7 +2,7 @@ import { MessageCircle, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { person_name, phone_number, whatsapp_number } from "./secret";
 
-export default function VashikaranGrid() {
+export default function ProblemGrid() {
   const items = [
   {
     title: "Relationship Guidance",
