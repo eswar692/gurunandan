@@ -58,6 +58,26 @@
       name="twitter:description"
       content="Pandith Raghavendra Prasad offers traditional spiritual guidance for relationship, marriage, personal and career concerns, with confidential consultations and culturally rooted spiritual practices."
     />
+
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+      <script>
+        // Helper function to delay opening a URL until a gtag event is sent.
+        // Call it in response to an action that should navigate to a URL.
+        function gtagSendEvent(url) {
+          var callback = function () {
+            if (typeof url === 'string') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion_event_contact', {
+            'event_callback': callback,
+            'event_timeout': 2000,
+            // <event_parameters>
+          });
+          return false;
+        }
+      </script>
+
    
     <title>Pandith Raghavendra Prasad | Relationship, Marriage & Career Guidance</title>
   </head>
